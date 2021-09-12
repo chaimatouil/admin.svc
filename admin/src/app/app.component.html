@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-size: 28px;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #111;
+            position: -webkit-sticky;
+            /* Safari */
+            position: sticky;
+            top: 0;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: rgb(74, 109, 97);
+        }
+        
+        .active {
+            background-color: #158b78;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <ul>
+        <li><a class="active" routerLink="/home">Home</a></li>
+        <li>
+            <a routerLink="/ajouter-produit">Ajouter Produit</a>
+        </li>
+        <li>
+            <a routerLink="/supprimer-produit">Supprimer Produit</a>
+        </li>
+        <li><a routerLink="/modifier-produit">Modifier Produit</a></li>
+
+    </ul>
+
+</body>
+
+</html>
+
+<router-outlet></router-outlet>
